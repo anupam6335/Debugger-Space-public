@@ -1,0 +1,39 @@
+.bottomParagraph {
+    color: #c4c5c5;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.actionButtonWrap {
+   margin-top: 40px;
+}
+
+
+.otpBox {
+    display: flex;
+}
+
+.otpBox input {
+    width: 50px;
+    font-size: 32px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 2px;
+    border: 2px solid #55525c;
+    background: #0b1230;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    transition: all 0.1s;
+}
+
+.otpBox input:focus {
+    border: 2px solid #27ffa9;
+    box-shadow: 0 0 2px 2px #27ffd76a;
+}
+
+.space {
+    margin-right: 1rem !important;
+}

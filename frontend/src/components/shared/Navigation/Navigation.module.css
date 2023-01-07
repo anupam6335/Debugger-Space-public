@@ -1,0 +1,60 @@
+.navbar {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoutButton {
+    background: #938eff;
+    border-radius: 8px;
+    padding: 1px;
+    height: 32px;
+    width: 32px;
+    transition: 0.4s ease-in-out;
+}
+
+.navRight {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    height: 45px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #6C63FF;
+    margin: 0 20px;
+    margin-right: 10px;
+    transition: 0.1s ease-in;
+}
+.avatar:hover{
+    border: 4px solid #6C63FF;
+}
+button img {
+    height: 30px;
+    width: 30px;
+}
+.logos {
+    height: 45px;
+    width: 45px;
+    background: #fff;
+    border-radius: 40%;
+    padding: 1px;
+}
+.separate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.github {
+    margin-top: -50px;
+    margin-left: -35px;
+}
+
+.github img {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}

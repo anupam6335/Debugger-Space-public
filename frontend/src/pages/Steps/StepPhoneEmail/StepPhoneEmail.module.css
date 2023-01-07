@@ -1,0 +1,50 @@
+.rightBoxCenter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.cardWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.buttonWrap {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.tabButton {
+    width: 60px;
+    height: 60px;
+    background: #262626;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: all 0.4s ease-in;
+    
+}
+
+.tabButton:last-child{
+    margin-left: 20px;
+}
+
+.active {
+    background: #6C63FF;
+}
+
+.actionButtonWrap{
+    margin-top: 40px;
+}
+
+.bottomParagraph {
+    color: #c4c5c5;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+}

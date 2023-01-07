@@ -1,0 +1,57 @@
+.card {
+    width: 1500px;
+    max-width: 90%;
+    min-height: 400px;
+    background: #1D1D1D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.right{
+    width: 550px;
+    max-width: 90%;
+    min-height: 400px;
+    padding: 30px;
+    text-align: center;
+}
+
+.headingWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.text {
+    font-size: 22px;
+    line-height: 1.6;
+    color: #C4C5C5;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.signinWrapper {
+    margin-top: 25px;
+}
+
+.hasInvite {
+    color: #6C63FF;
+}
+
+.slide{animation:slide .45s cubic-bezier(.25,.46,.45,.94) both}
+
+ @keyframes slide{0%{transform:translateZ(0)}100%{transform:translateZ(160px)}}
+
+

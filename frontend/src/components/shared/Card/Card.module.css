@@ -1,0 +1,32 @@
+.right{
+    width: 550px;
+    max-width: 90%;
+    min-height: 400px;
+    padding: 30px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headingWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.logos {
+    height: 45px;
+    width: 45px;
+    background: rgb(255, 255, 255);
+    border-radius: 30%;
+    padding: 1px;
+}

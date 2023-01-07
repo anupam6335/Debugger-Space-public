@@ -1,0 +1,39 @@
+.otpBox {
+    display: flex;
+}
+
+.otpBox input {
+    width: 390px;
+    font-size: 32px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 2px;
+    border: 2px solid #55525c;
+    background: #0b1230;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    transition: all 0.1s;
+}
+
+.otpBox input:focus {
+    border: 2px solid #9327ff;
+    box-shadow: 0 0 2px 2px #9e27ff6a;
+}
+
+.space {
+    margin-right: 1rem !important;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}

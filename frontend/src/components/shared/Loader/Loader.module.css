@@ -1,0 +1,67 @@
+.message {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.card {
+    width: 1500px;
+    max-width: 90%;
+    min-height: 400px;
+    max-height: 700px;
+    background: #1D1D1D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.spinner {
+    margin-bottom: 40px;
+}
+
+.palestTulip {fill:#e2e0ff;}
+.paleTulip {fill:#a7a1ff;}
+.tulip {fill:#6c63ff;}
+.darkTulip {fill:#413b99;}
+.darkestTulip {fill:#161433;}
+.mouse {fill:#E5E4E3;}
+
+.turn01, .turn02, .turn03, .turn04, .turn05, .turn06{
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: 50% 50%;
+}
+
+.turn01 { animation-name: turnOne;}
+.turn02 { animation-name: turnTwo;}
+.turn03 { animation-name: turnThree;}
+.turn04 { animation-name: turnFour;}
+.turn05 { animation-name: turnFive;}
+
+@keyframes turnOne {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(180deg);}
+}
+@keyframes turnTwo {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+@keyframes turnThree {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(540deg);}
+}
+@keyframes turnFour{
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(720deg);}
+}
+@keyframes turnFive {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(900deg);}
+}
+
+

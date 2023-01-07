@@ -1,0 +1,154 @@
+/* 
+:root {
+    --color: #fff;
+}
+
+.btn {
+  --b: 3px;   
+  --s: .45em; 
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:hover,
+.btn:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+
+}
+
+.btn:active {
+  background: rgba(42, 41, 41, 0);
+  color: #fff;
+}
+
+.arrow {
+    margin-left: 10px;
+} */
+
+
+
+
+/* CSS */
+.btn {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn82Shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.btn82edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    rgb(28, 2, 132) 0%,
+    rgb(51, 16, 179) 8%,
+    rgb(40, 4, 184) 92%,
+    rgb(34, 0, 82) 100%
+    /* hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100% */
+  );
+}
+
+.btn82Front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  /* background: hsl(345deg 100% 47%); */
+  background: #6C63FF;
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+  .btn82Front {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+  }
+}
+
+.btn:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.btn:hover .btn82Front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.btn:active .btn82Front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.btn:hover .btn82Shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.btn:active .btn82Shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.btn:focus:not(:focus-visible) {
+  outline: none;
+}
